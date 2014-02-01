@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   background-color: #f0ecd8;
+  background-image: url("../img/greyzz.png");
   font-family: 'Quicksand', Arial, serif;
 }
 hr {
@@ -65,6 +66,7 @@ hr {
 	font-weight: 800;
 	font-size: 16px;
 }
+
 /*/Login Page*/
 .welcome{
 	font-size: 20px;
@@ -73,9 +75,13 @@ hr {
 }
 
 /*List page Style */
+
+.compose_button{
+	margin: 20px 30px;
+}
 .list_container{
-	margin-top: 30px;
-	margin-bottom: 15px;
+	margin-top: 20px;
+	margin-bottom: 5px;
 	display: inline-block;
 	margin-left: 30px;
 }
@@ -88,6 +94,10 @@ hr {
 	font-weight: 800;
 	font-size: 18px;
 	color: #9A3234;
+}
+
+.button_container{
+	background: #FFFFF9;
 }
 /*Sticky footer*/
 * {
