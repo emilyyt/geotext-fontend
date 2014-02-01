@@ -20,6 +20,7 @@ body {
 
 /*Message Main Styles*/
 #location{
+	margin-top: 15px;
 	color: #9A3234;
 	font-weight: 800;
 	font-size: 20px;
@@ -47,6 +48,7 @@ body {
 	padding: 20px 30px;
 	height: 100%;
 	background-color: white;
+	border-left: 5px solid red;
 }
 .message_photo{
 	margin-top: 20px;
@@ -57,9 +59,7 @@ body {
 }
 
 /*Button Styles*/
-.btn-ttc:active{
-	color: #9A3234;
-}
+.btn-ttc:active{}
 /*Sticky footer*/
 * {
 	margin: 0;
