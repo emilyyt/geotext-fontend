@@ -2,10 +2,10 @@
 <html>
 	<head>
 		<title> GeoText </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" user-scalable=no>
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1" user-scalable=no>
 		<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
 	</head>
 
@@ -20,9 +20,10 @@
 				 </div>
 			</div>
 		</nav>
-
+<!-- Special content div! -->
 		<div class="content">
-			<div class="push"></div> 
+		</div>
+		<div class="unstyled-content">
 		</div>
 	</div>
 	<div class="footer" id="footer"> 
@@ -31,29 +32,67 @@
 		</div>
 	</div>
 
-
 <!-- Templates -->
-    <script type="text/template" id="message-view-template">
-    
-			<div class="message-view">
-				<h4 id="location"> Location </h4>
-				<!-- 		Replace "Newell Simon Atrium" with real data.-->
-				<div id="location_name"> Newell Simon Atrium</div>
-				<!-- 			//Replace "atrium.jpg" with data.-->
-				<img class="message_photo" src="../pictures/atrium.jpg" width="300"/>
+  <script type="text/template" id="message-view-template">
+		<div class="message-view">
+			<h4 id="location"> Location </h4>
+			<!-- 		Replace "Newell Simon Atrium" with real data.-->
+			<div id="location_name"> Newell Simon Atrium</div>
+			<!-- 			//Replace "atrium.jpg" with data.-->
+			<img class="message_photo" src="../pictures/atrium.jpg" width="300"/>
+		</div>
+		<div class="message_container">
+			<div class="sender_name">
+				Sasha:
 			</div>
-			<div class="message_container">
-				<div class="sender_name">
-					Sasha:
-				</div>
-				<div class="message_content">
-					Location changed to NSH 201. 
-				</div>
+			<div class="message_content">
+				Location changed to NSH 201. 
 			</div>
-			<button type="button" class="btn btn-default btn-delete">Delete</button>
-				<button type="button" class="btn btn-default btn-reply">Reply</button>
-		</script>
+		</div>
+		<button type="button" class="btn btn-default btn-delete">Delete</button>
+		<button type="button" class="btn btn-default btn-reply">Reply</button>
+		<div class="push"></div> 
+	</script>
+	<script type="text/template" id="create-text-template">
+		<div class="create-text">
+			<form role="form">
+				<div class="form-group">
+					<label for="sendMessageTo">Send message to</label>
+					<input type="text" class="form-control" id="sendMessageTo" placeholder="">
+				</div>
+				<div class="form-group">
+					<label for="iAmAt">I am at</label>
+					<input type="text" class="form-control" id="iAmAt" placeholder="your front door">
+				</div>
+				<div class="form-group">
+					<label for="theMessage">File input</label>
+					<input type="text" class="form-control" id="theMessage" placeholder="">
 
+				</div>
+				
+				<button type="button" class="btn btn-default">Upload Picture</button>
+				<button type="submit" class="btn btn-default">Send</button>
+			</form>
+		</div>
+		<div class="push"></div> 
+  </script>
+  <!-- Require unstyled content div -->
+	<script type="text/template" id="message-list-template">
+		<ul class="feed_list">
+			<li class="list_container">
+				
+<!-- 						<img src="img/icon.jpeg" width="80" align="left"/> -->
+				<div class="contact_name">
+					Sasha Palmer 
+				</div>
+				<p class="preview_message">
+					Location change! NSH 201...
+				</p>
+			</li>
+			<hr/>
+		</ul>
+		<div class="push"></div> 
+	</script>
 	</body>
 
 </html>

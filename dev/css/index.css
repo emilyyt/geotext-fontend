@@ -3,6 +3,14 @@ body {
   background-color: #f0ecd8;
   font-family: 'Quicksand', Arial, serif;
 }
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
 
 /*Bootstrap classes*/
 
@@ -58,8 +66,23 @@ body {
 	font-size: 16px;
 }
 
-/*Button Styles*/
-.btn-ttc:active{}
+/*List page Style */
+.list_container{
+	margin-top: 30px;
+	margin-bottom: 15px;
+	display: inline-block;
+	margin-left: 30px;
+}
+.preview_message{
+	display: inline-block;
+	font-style: italic;
+}
+
+.contact_name{
+	font-weight: 800;
+	font-size: 18px;
+	color: #9A3234;
+}
 /*Sticky footer*/
 * {
 	margin: 0;
