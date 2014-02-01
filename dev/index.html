@@ -3,6 +3,69 @@
 	<head>
 		<title> GeoText </title>
 		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
 		<body>
 		</body>
 	</head>
+
+	<body class=>
+
+<!-- Application Interface Wrapper -->
+		<div id="GeoTextApp">
+			<div class="GeoTextTitle">
+				<h1>GeoText</h1>
+			</div>
+
+			<div class="content">
+				<div class="message-view">
+					<h4 id="location"> Location </h3>
+<!-- 					//Replace "Newell Simon Atrium" with real data.
+ -->					<h3 id="location-name"> Newell Simon Atrium</h3>
+<!-- 					//Replace "atrium.jpg" with data.
+ -->					<img src="../pictures/atrium.jpg">
+					<div class="message-view-msg">
+						<div class="message-text">
+<!-- 							//replace "Sasha" with data
+ -->		 					<h7 class="name">Sasha</h7>
+<!-- 		 					//replace with Message. 
+ -->		 					Location change NSH 201
+						</div>
+					</div>
+					<button type="button" class="btn btn-default btn-delete">Delete</button>
+					<button type="button" class="btn btn-default btn-reply">Reply</button>
+
+				</div>
+
+			</div>
+
+		</div>
+		<div id="footer">
+			Tartan Hack Spring 2014
+		</div>
+
+
+<!-- Templates -->
+    <script type="text/template" id="message-view-template">
+		<div class="message-view">
+			<h4 id="location"> Location </h3>
+			//Replace "Newell Simon Atrium" with real data.
+			<h3 id="location-name"> Newell Simon Atrium</h3>
+			//Replace "atrium.jpg" with data.
+			<img src="atrium.jpg">
+			<div class="message-view-msg">
+				<div class="message-text">
+					//replace "Sasha" with data
+ 					<h7 class="name">Sasha</h7>
+ 					//replace with Message. 
+ 					Location change NSH 201
+				</div>
+			</div>
+			<button type="button" class="btn btn-default btn-delete">Delete</button>
+			<button type="button" class="btn btn-default btn-reply">Reply</button>
+
+		</div>
+    </script>
+
+	</body>
+
+</html>

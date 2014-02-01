@@ -1,0 +1,17 @@
+body {
+  margin: 0px;
+  background-color: #f0ecd8;
+}
+
+.GeoTextTitle {
+  background-color: #1d696a;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+  color: #ffffff;
+}
+
+.content {
+  margin: 0 auto;
+  width: 50%;
+}
