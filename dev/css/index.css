@@ -65,6 +65,12 @@ hr {
 	font-weight: 800;
 	font-size: 16px;
 }
+/*/Login Page*/
+.welcome{
+	font-size: 20px;
+	font-weight: bold;
+	position:relative;
+}
 
 /*List page Style */
 .list_container{
